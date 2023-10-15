@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Hexo</title>
+    <title> | Hexo</title>
     <meta name="author" content="shenkefeng" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -36,7 +36,9 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -146,32 +148,11 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>Hexo</h1>
-                <h3></h3>
-                <h5></h5>
-            </div>
-        </span>
+            <div class="article">
+    <div>
+        <h1></h1>
     </div>
-</div>
-<div id="home-posts-wrap" true ref="homePostsWrap">
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2023/10/15/Java/Http%E8%B0%83%E7%94%A8%E7%AF%87/">
-        <h2 class="post-title"></h2>
-    </a>
-    <div class="category-and-date">
-        
+    <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
@@ -181,10 +162,9 @@
         
         
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="Http调用篇"><a href="#Http调用篇" class="headerlink" title="Http调用篇"></a>Http调用篇</h1><h2 id="1-超时"><a href="#1-超时" class="headerlink" title="1. 超时"></a>1. 超时</h2><p>对于 HTTP 调用，虽然应用层走的是 HTTP 协议，但网络层面始终是 TCP&#x2F;IP 协议。TCP&#x2F;IP 是面向连接的协议，在传输数据之前需要建立连接。几乎所有的网络框架都会提供这么两个超时参数。</p>
+    
+    <div class="content" v-pre>
+        <h1 id="Http调用篇"><a href="#Http调用篇" class="headerlink" title="Http调用篇"></a>Http调用篇</h1><h2 id="1-超时"><a href="#1-超时" class="headerlink" title="1. 超时"></a>1. 超时</h2><p>对于 HTTP 调用，虽然应用层走的是 HTTP 协议，但网络层面始终是 TCP&#x2F;IP 协议。TCP&#x2F;IP 是面向连接的协议，在传输数据之前需要建立连接。几乎所有的网络框架都会提供这么两个超时参数。</p>
 <h3 id="1-1-连接超时"><a href="#1-1-连接超时" class="headerlink" title="1.1 连接超时"></a>1.1 连接超时</h3><p>连接超时参数( <code>ConnectTimeout</code>): 让用户配置建连阶段的最长等待时间</p>
 <p><strong>误区</strong>：</p>
 <ol>
@@ -357,92 +337,13 @@ public boolean canRetryNextServer(LoadBalancedRetryContext context) &#123;
 <h2 id="3-并发"><a href="#3-并发" class="headerlink" title="3. 并发"></a>3. 并发</h2><p>defaultMaxPerRoute&#x3D;2，也就是同一个主机 &#x2F; 域名的最大并发请求数为 2</p>
 <h2 id="4-项目"><a href="#4-项目" class="headerlink" title="4. 项目"></a>4. 项目</h2><p><img src="https://oss-picgo-skf.oss-cn-hangzhou.aliyuncs.com/ob/img/image-20231015155811295.png" alt="image-20231015155811295"></p>
 
-            
-        </div>
     </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2023/10/15/Java/Http%E8%B0%83%E7%94%A8%E7%AF%87/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/10/14/my-first-blog/">
-        <h2 class="post-title">my-first-blog</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/10/14
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="我的第一个博客"><a href="#我的第一个博客" class="headerlink" title="我的第一个博客"></a>我的第一个博客</h1><p>yeah!!</p>
-<pre><code class="java">public class Test &#123;
-    public static void main(String args[])&#123;
-        System.out.println(&quot;HelloWorld&quot;);
-    &#125;
-&#125;
-</code></pre>
-<p>111</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2023/10/14/my-first-blog/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
     
-    <span class="current">1</span>
     
     
     
     
-</div>
-
-    </div>
     
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">shenkefeng</div>
-        <div class="description">
-            <p>Description<br>…</p>
-
-        </div>
-        
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
-            </div>
-            
-        </div>
-        
-    </div>
-</div>
-
-    </div>
     
 </div>
 
@@ -474,6 +375,12 @@ public boolean canRetryNextServer(LoadBalancedRetryContext context) &#123;
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>
